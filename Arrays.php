@@ -72,13 +72,13 @@
     // Ordenamos el array en orden descendente usando rsort
     rsort($array);
 
-    // Inicializamos un contador para numerar las letras
-    $contador = 1;
+    // Inicializamos un contador descendente
+    $contador = count($array);
 
     // Recorremos el array ordenado en orden descendente
     foreach ($array as $letter) {
         echo "letter " . $contador . "°: " . trim($letter) . "<br>"; // Trim para evitar espacios no deseados
-        $contador++;
+        $contador--;
     }
 
 
